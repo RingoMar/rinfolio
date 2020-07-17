@@ -1,0 +1,116 @@
+body {
+  color: #61dafb !important;
+  background-color: #282c34 !important;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 60vmin;
+  pointer-events: none;
+  animation: App-logo-spin alternate-reverse 20s cubic-bezier(0.33, 1.51, 0.99, -0.32);
+}
+
+.App-lost-logo {
+  margin: 100px;
+  height: 60vmin;
+  pointer-events: none;
+  animation: shakeTheRoom 2s alternate-reverse cubic-bezier(.36, .07, .19, .97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shakeTheRoom {
+
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.App-logo-copy {
+  height: 60vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 9vmin);
+  color: #61dafb;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  color: #61dafb !important;
+}
+
+.fix-nav-links {
+  display: flex !important;
+}
+
+.ico-nav {
+  display: block !important;
+  font-size: 24px !important;
+  margin-right: 5px !important;
+}
+
+.pushed- {
+  margin: 100px 0px 0px 0px;
+}
+
+.rinwrapper {
+  position: relative;
+  height: 100%;
+  padding: 0;
+}
+
+.rincopy,
+.rinlogo {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.hr-color-up {
+
+  border-top: 1px solid #61dafb !important;
+}
