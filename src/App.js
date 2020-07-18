@@ -1,18 +1,19 @@
-import React from "react";
-import HomepageImage from "./components/HomepageImage";
-import Newbar from "./components/newbar";
-import FooterNav from "./components/footer";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+
+import { NavLink, Route, Switch } from "react-router-dom";
+
 import AboutMe from "./components/aboutme";
 import Cards from "./components/homeCards";
-import PrivacyPolicy from "./components/prav";
+import FooterNav from "./components/footer";
+import Lazyload from "react-lazyload";
 import LoadRin from "./components/preloadspin";
+import Newbar from "./components/newbar";
+import PrivacyPolicy from "./components/prav";
+import React from "react";
+import Spinner from "react-bootstrap/Spinner";
 import logo from "./rinIcon.png";
 import lostNav from "./rin404.png";
-import Spinner from "react-bootstrap/Spinner";
-import Lazyload from "react-lazyload";
-import "./App.css";
-import { NavLink, Switch, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   const Home = () => (

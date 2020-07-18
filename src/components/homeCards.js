@@ -1,20 +1,20 @@
-import React from "react";
-import twitchIco from "./images/twitch.png";
-import discordIco from "./images/discord.png";
-import blankCard from "./images/blank.png";
-import keto from "./images/rinKeto.png";
-import pop from "./images/pop.png";
-import dab from "./images/DaVinciDab.png";
-import bq from "./images/rinBQ.png";
-import Lazyload from "react-lazyload";
 import {
   Button,
   Card,
+  CardColumns,
   CardDeck,
   CardGroup,
   Container,
-  CardColumns,
 } from "react-bootstrap";
+
+import Lazyload from "react-lazyload";
+import React from "react";
+import blankCard from "./images/blank.png";
+import bq from "./images/rinBQ.png";
+import discordIco from "./images/discord.png";
+import keto from "./images/rinKeto.png";
+import pop from "./images/pop.png";
+import twitchIco from "./images/twitch.png";
 
 function newbar() {
   return (
@@ -26,7 +26,7 @@ function newbar() {
           </Lazyload>
           <Card.Body>
             <Card.Title>Rin Bot — Twitch</Card.Title>
-            <Card.Text>
+            <Card.Text className="text-white">
               Rin Bot Twitch bot is a multi-functional IRC chat bot. It was
               first designed to spam chat when subscriptions would come in, it
               would soon evolve into function based rather than text based
@@ -42,7 +42,7 @@ function newbar() {
           <Card.Img variant="top" src={discordIco} />
           <Card.Body>
             <Card.Title>Rin Bot — Discord</Card.Title>
-            <Card.Text>
+            <Card.Text className="text-white">
               Rin Bot Discord Bot is a multi-functional IRC chat bot with
               advanced Artificial Intelligence. This bot can be seen as a port
               between Twitch and Discord commands. This bot's goal is to
@@ -61,12 +61,10 @@ function newbar() {
           <Card.Img variant="top" src={bq} />
           <Card.Body>
             <Card.Title>BoardQuelle</Card.Title>
-            <Card.Text>
+            <Card.Text className="text-white">
               BoardQuelle is a website created for a Twitch{" "}
-              <a className="text-secondary" herf="twitch.tv/zaquelle">
-                streamer
-              </a>{" "}
-              to complie all of her werid and NSFW song noises.
+              <a herf="twitch.tv/zaquelle">streamer</a> to complie all of her
+              werid and NSFW song noises.
             </Card.Text>
           </Card.Body>
           <Card.Footer>
@@ -95,7 +93,7 @@ function newbar() {
           </Lazyload>
           <Card.Body>
             <Card.Title>Rin Keto</Card.Title>
-            <Card.Text>
+            <Card.Text className="text-white">
               Rin Keto is a websote built to help a friend with her taking away
               the burden of "What CAN I eat today?" and turning it into "What
               SHOULD I eat today?"{" "}
@@ -142,15 +140,32 @@ function newbar() {
           </blockquote>
         </Card>
         <Card bg="dark" variant="dark">
+          <Lazyload throttle={200}>
+            <Card.Img variant="top" src={twitchIco} />
+          </Lazyload>
           <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
+            <Card.Title>Spam Hearts </Card.Title>
+            <Card.Text className="text-white">
+              The first version of Rin Bot was a simple heart spam script for
+              twitchchat. Ive made it nob friendly for anyone that wants to{" "}
+              <a herf="https://github.com/RingoMar/emotes-when-sub">use</a> it.
+            </Card.Text>
+          </Card.Body>
+          <Card.Footer>
+            <small className="text-muted">modCheck</small>
+          </Card.Footer>
+        </Card>
+        <Card bg="dark" variant="dark">
+          <Card.Body>
+            <Card.Title>Fun Fact</Card.Title>
+            <Card.Text className="text-white">
+              The word "Apple" in Japanese translate to "林檎". In spoken word
+              it translate to "Ringo"
             </Card.Text>
             <Card.Text>
-              <small className="text-muted">Last updated 3 mins ago</small>
+              <small className="text-muted">
+                Thanks to Bravo for finding this out.
+              </small>
             </Card.Text>
           </Card.Body>
         </Card>
