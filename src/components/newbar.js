@@ -15,7 +15,7 @@ function newbar() {
             height="30"
             className="d-inline-block align-top"
           />{" "}
-          Ringo Mar
+          RINGO MAR
         </NavLink>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -30,7 +30,7 @@ function newbar() {
             className="fix-nav-links nav-link"
             to="./about"
           >
-            <i className="ico-nav material-icons"> info_outline</i>About
+            <i className="ico-nav material-icons">account_box</i>About
           </NavLink>
           <NavLink role="button" className="fix-nav-links nav-link" to="./rin">
             <i className="ico-nav material-icons"> public </i>Rin Bot

@@ -10,9 +10,11 @@ import Lazyload from "react-lazyload";
 import LoadRin from "./components/preloadspin";
 import Newbar from "./components/newbar";
 import PrivacyPolicy from "./components/prav";
+import Rinbotsys from "./components/rinbotsys";
 import React from "react";
 import Spinner from "react-bootstrap/Spinner";
 import logo from "./rinIcon.png";
+import Rinlogo from "./rinRin.png";
 import lostNav from "./rin404.png";
 
 function App() {
@@ -54,9 +56,12 @@ function App() {
     <div className="App">
       <Newbar />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-link">RINGO MAR</h1>
+        <img src={Rinlogo} className="ghost" alt="logo" />
+        <p className="shadowFrame">
+          <div className="shadow" style={{ height: 13, width: 300 }}></div>
+        </p>
       </header>
+      <Rinbotsys />
       <div className="pushed-"></div>
       <FooterNav />
     </div>

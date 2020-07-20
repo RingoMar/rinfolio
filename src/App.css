@@ -124,6 +124,66 @@ a {
   margin: 60px;
 }
 
+
+
+.ghost {
+  height: 60vmin;
+  pointer-events: none;
+  animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+  }
+}
+
+.shadowFrame {
+  width: 567px;
+  margin-top: 15px;
+}
+
+.shadow {
+  background-color: #00000038;
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+  border-radius: 60%;
+}
+
+ellipse {
+  transform-origin: center center;
+}
+
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+.grad {
+  background-image: linear-gradient(to right, #147e42, #0d554a);
+}
+
+.rin-sys {
+  display: flex;
+  padding: 10px 0px 0px 40px;
+}
+
+.fixlikkleico {
+  margin: 0px 15px 0px 0px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .rin-aboutcard {
@@ -137,6 +197,11 @@ a {
 
   .rin-aboutimg {
     height: 230px;
+  }
+
+  .shadowFrame {
+    width: 267px;
+    margin-top: 15px;
   }
 }
 
@@ -153,5 +218,10 @@ a {
 
   .rin-aboutimg {
     height: 230px;
+  }
+
+  .shadowFrame {
+    width: 267px;
+    margin-top: 15px;
   }
 }
