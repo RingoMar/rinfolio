@@ -140,9 +140,6 @@ function newbar() {
           </blockquote>
         </Card>
         <Card bg="dark" variant="dark">
-          <Lazyload throttle={200}>
-            <Card.Img variant="top" src={twitchIco} />
-          </Lazyload>
           <Card.Body>
             <Card.Title>Spam Hearts </Card.Title>
             <Card.Text className="text-white">

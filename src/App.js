@@ -34,12 +34,6 @@ function App() {
   const About = () => (
     <div className="App">
       <Newbar />
-      <header className="App-header">
-        <Lazyload placeholder={<LoadRin />} throttle={200}>
-          <img src={logo} className="App-logo" alt="logo" />
-        </Lazyload>
-        <h1 className="App-link">RINGO MAR</h1>
-      </header>
       <AboutMe />
       <div className="pushed-"></div>
       <FooterNav />
