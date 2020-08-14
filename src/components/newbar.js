@@ -1,11 +1,12 @@
-import React from "react";
-import { Button, Navbar, Nav } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
+
 import { NavLink } from "react-router-dom";
+import React from "react";
 import navlogo from "./favicon.ico";
 
 function newbar() {
   return (
-    <Navbar expand="lg" bg="dark" variant="dark" className="">
+    <Navbar fixed="top" expand="lg" bg="dark" variant="dark" className="">
       <Navbar.Brand>
         <NavLink role="button" className="nav-link" to="./">
           <img

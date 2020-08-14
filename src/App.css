@@ -124,8 +124,6 @@ a {
   margin: 60px;
 }
 
-
-
 .ghost {
   height: 60vmin;
   pointer-events: none;
@@ -148,6 +146,10 @@ a {
   animation: shrink 3s ease-out infinite;
   transform-origin: center center;
   border-radius: 60%;
+}
+
+.pushLil {
+  margin-top: 35px;
 }
 
 ellipse {

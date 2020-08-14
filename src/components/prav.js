@@ -1,17 +1,6 @@
+import { Container, Row, row } from "react-bootstrap";
+
 import React from "react";
-import meImg from "./images/ringomar.png";
-import codeStats from "./images/brave_JJaOJ3Cw96.jpg";
-import {
-  Button,
-  Navbar,
-  Nav,
-  Container,
-  Image,
-  Card,
-  ResponsiveEmbed,
-  Row,
-  row,
-} from "react-bootstrap";
 
 navigator.sayswho = (function () {
   var ua = navigator.userAgent,
@@ -92,7 +81,7 @@ function prvate() {
             policies. This website has no access or control over these cookies,
             scripts and/or web beacons that may be used by third parties. Learn
             how to{" "}
-            <a herf="http://www.google.com/privacy_ads.html">
+            <a href="https://www.google.com/privacy_ads.html">
               opt out of Google’s cookie usage.
             </a>
           </p>

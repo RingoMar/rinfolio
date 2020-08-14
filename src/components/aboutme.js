@@ -1,30 +1,27 @@
 import {
-  Button,
+  
   Card,
   CardGroup,
   Container,
-  Image,
-  Nav,
-  Navbar,
-  ResponsiveEmbed,
+  
 } from "react-bootstrap";
 
 import Lazyload from "react-lazyload";
 import LoadRin from "./preloadspin";
 import React from "react";
-import v from "./images/vs.png";
 import b from "./images/brave.png";
-import d from "./images/sx.png";
-import k from "./images/kden.png";
-import g from "./images/gimp.png";
 import codeStats from "./images/brave_JJaOJ3Cw96.jpg";
+import d from "./images/sx.png";
+import g from "./images/gimp.png";
+import k from "./images/kden.png";
 import meImg from "./images/ringomar.png";
+import v from "./images/vs.png";
 
 function abouters() {
   return (
     <Container>
       <div className="rin-aboutcard row d-flex">
-        <div className="col-sm-6">
+        <div className="col-6 col-md-6 col-sm-6 col-xl-6 pushLil">
           <h3 className="float-left" variant="primary">
             ABOUT ME
           </h3>
@@ -32,8 +29,8 @@ function abouters() {
         </div>
       </div>
       <div className="row clearfix">
-        <div className="col-md-12">
-          <img className="float-left rin-aboutimg" src={meImg} />
+        <div className="col-12 col-md-12 col-xl-12">
+          <img className="float-left rin-aboutimg" src={meImg} alt="Me"/>
           <p className="rin-aboutme text-white">
             Hello, I’m Justin or as I go on the internet, Ringo Mar. I’m typical
             to average zoomer that loves coding, Music, Engineering and Memes.
@@ -60,7 +57,7 @@ function abouters() {
             competition rankings and more. After getting the output I wanted to
             pretty print the data rather than show only text, so I learned HTML
             and CSS. You can check out my open source projects as displayed on
-            the home page <a herf="https://github.com/ringoMar/">here</a>.
+            the home page <a href="https://github.com/ringoMar/">here</a>.
           </p>
           <p className="rin-aboutme text-white">
             Well that’s it. Thank you for getting to know me, good luck trying
@@ -80,14 +77,14 @@ function abouters() {
           </h1>
           <Card.Text>
             I code alot in my free time,{" "}
-            <a herf="https://codestats.net/users/ringo">check out</a> my real
+            <a href="https://codestats.net/users/ringo">check out</a> my real
             time stats. (I could be coding right!)
           </Card.Text>
         </Card.ImgOverlay>
       </Card>
       <div className="pushed-"></div>
       <div className="rin-aboutcard row d-flex">
-        <div className="col-sm-6">
+        <div className="col-6 col-md-6 col-sm-6 col-xl-6">
           <h3 className="float-left" variant="primary">
             PROGRAMS I USE
           </h3>

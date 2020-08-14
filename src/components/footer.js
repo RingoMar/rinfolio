@@ -1,6 +1,7 @@
-import React from "react";
-import { Button, Navbar, Nav } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
+
 import { NavLink } from "react-router-dom";
+import React from "react";
 
 function footer() {
   return (
