@@ -60,13 +60,15 @@ function newbar() {
             </Card.Footer>
           </Card>
           <Card bg="dark" variant="dark">
-            <Card.Img variant="top" src={bq} />
+            <a href="https://github.com/RingoMar/BoardQuelle">
+              <Card.Img variant="top" src={bq} />
+            </a>
             <Card.Body>
               <Card.Title>BoardQuelle</Card.Title>
               <Card.Text className="text-white">
                 BoardQuelle is a website created for a Twitch{" "}
-                <a href="twitch.tv/zaquelle">streamer</a> to complie all of her
-                werid and NSFW song noises.
+                <a href="https://twitch.tv/zaquelle">streamer</a> to complie all
+                of her werid and NSFW song noises.
               </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -91,12 +93,14 @@ function newbar() {
           </Card>
           <Card bg="dark" variant="dark">
             <Lazyload throttle={200}>
-              <Card.Img variant="top" src={keto} />
+              <a href="https://github.com/RingoMar/pookieKeto">
+                <Card.Img variant="top" src={keto} />
+              </a>
             </Lazyload>
             <Card.Body>
               <Card.Title>Rin Keto</Card.Title>
               <Card.Text className="text-white">
-                Rin Keto is a websote built to help a friend with her taking
+                Rin Keto is a website built to help a friend with her taking
                 away the burden of "What CAN I eat today?" and turning it into
                 "What SHOULD I eat today?"{" "}
               </Card.Text>
