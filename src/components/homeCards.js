@@ -3,6 +3,7 @@ import { Card, CardColumns, CardDeck, Container } from "react-bootstrap";
 import CSH from "./images/c#.png";
 import JavaScript from "./images/js.png";
 import Lazyload from "react-lazyload";
+import Names from "./images/names.png";
 import Python from "./images/python.png";
 import Re from "./images/react.png";
 import React from "react";
@@ -172,6 +173,35 @@ function newbar() {
                 </small>
               </Card.Text>
             </Card.Body>
+          </Card>
+          <Card bg="dark" variant="dark">
+            <Card.Body>
+              <Card.Title>About Me</Card.Title>
+              <Card.Text className="text-white">
+                <a href="../about">Click here</a> to learn all about me! Ringo!
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card bg="dark" variant="dark">
+            <a href="https://github.com/RingoMar/rinNames">
+              <Card.Img variant="top" src={Names} />
+            </a>
+            <Card.Body>
+              <Card.Title>Rin Names</Card.Title>
+              <Card.Text className="text-white">
+                This is a algorithm used to fragment a username to guess the
+                most likely accepted shortened form. Read More about it{" "}
+                <a href="https://github.com/RingoMar/rinNames"> here </a>
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">
+                <i className="ico-nav material-icons"> eco </i> This is a{" "}
+                <a href="https://github.com/RingoMar/rinNames">
+                  Open Source Project.
+                </a>
+              </small>
+            </Card.Footer>
           </Card>
         </CardColumns>
       </Container>
