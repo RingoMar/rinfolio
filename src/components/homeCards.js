@@ -1,21 +1,17 @@
-import { Card, CardColumns, CardDeck, Container } from "react-bootstrap";
+import { Card, CardColumns, CardDeck, Container } from 'react-bootstrap'
 
-import CSH from "./images/c#.png";
-import JavaScript from "./images/js.png";
-import Lazyload from "react-lazyload";
-import Names from "./images/names.png";
-import Python from "./images/python.png";
-import Re from "./images/react.png";
-import React from "react";
-import bq from "./images/rinBQ.png";
-import discordIco from "./images/discord.png";
-import git from "./images/git.png";
-import keto from "./images/rinKeto.png";
-import mcss from "./images/mcss.png";
-import mdb from "./images/mdb.png";
-import pop from "./images/pop.png";
-import twitchIco from "./images/twitch.png";
-import v from "./images/svs.png";
+import Lazyload from 'react-lazyload'
+import Re from './images/react.png'
+import React from 'react'
+import bq from './images/rinBQ.png'
+import discordIco from './images/discord.png'
+import git from './images/git.png'
+import keto from './images/rinKeto.png'
+import mcss from './images/mcss.png'
+import mdb from './images/mdb.png'
+import pop from './images/pop.png'
+import twitchIco from './images/twitch.png'
+import v from './images/svs.png'
 
 function newbar() {
   return (
@@ -34,7 +30,8 @@ function newbar() {
                 would soon evolve into function based rather than text based
                 commands for utility. Bringing its well known commands; weekly
                 Sub and occasional Donation Goal but still bringing fun text
-                commands.
+                commands. Rin bot was recently converted over from a python bot
+                to a full typescript bot.
               </Card.Text>
             </Card.Body>
             <Card.Footer>
@@ -67,14 +64,14 @@ function newbar() {
             <Card.Body>
               <Card.Title>BoardQuelle</Card.Title>
               <Card.Text className="text-white">
-                BoardQuelle is a website created for a Twitch{" "}
+                BoardQuelle is a website created for a Twitch{' '}
                 <a href="https://twitch.tv/zaquelle">streamer</a> to complie all
-                of her werid and NSFW song noises.
+                of her werid noises.
               </Card.Text>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">
-                <i className="ico-nav material-icons"> eco </i> This is a{" "}
+                <i className="ico-nav material-icons"> eco </i> This is a{' '}
                 <a href="https://github.com/RingoMar/BoardQuelle">
                   Open Source Project.
                 </a>
@@ -103,12 +100,12 @@ function newbar() {
               <Card.Text className="text-white">
                 Rin Keto is a website built to help a friend with her taking
                 away the burden of "What CAN I eat today?" and turning it into
-                "What SHOULD I eat today?"{" "}
+                "What SHOULD I eat today?"{' '}
               </Card.Text>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">
-                <i className="ico-nav material-icons"> eco </i> This is a{" "}
+                <i className="ico-nav material-icons"> eco </i> This is a{' '}
                 <a href="https://github.com/RingoMar/pookieKeto">
                   Open Source Project.
                 </a>
@@ -129,7 +126,7 @@ function newbar() {
             </Lazyload>
             <footer className="blockquote-footer">
               <small className="text-muted">
-                Pop Smoke (1999 - 2020){" "}
+                Pop Smoke (1999 - 2020){' '}
                 <cite title="Source Title">
                   Living definition of "Get Rich or Die Trying"
                 </cite>
@@ -151,8 +148,8 @@ function newbar() {
               <Card.Title>Spam Hearts </Card.Title>
               <Card.Text className="text-white">
                 The first version of Rin Bot was a simple heart spam script for
-                twitchchat. Ive made it noob friendly for anyone that wants to{" "}
-                <a href="https://github.com/RingoMar/emotes-when-sub">use</a>{" "}
+                twitchchat. Ive made it noob friendly for anyone that wants to{' '}
+                <a href="https://github.com/RingoMar/emotes-when-sub">use</a>{' '}
                 it.
               </Card.Text>
             </Card.Body>
@@ -182,27 +179,6 @@ function newbar() {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card bg="dark" variant="dark">
-            <a href="https://github.com/RingoMar/rinNames">
-              <Card.Img variant="top" src={Names} />
-            </a>
-            <Card.Body>
-              <Card.Title>Rin Names</Card.Title>
-              <Card.Text className="text-white">
-                This is a algorithm used to fragment a username to guess the
-                most likely accepted shortened form. Read More about it{" "}
-                <a href="https://github.com/RingoMar/rinNames"> here </a>
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">
-                <i className="ico-nav material-icons"> eco </i> This is a{" "}
-                <a href="https://github.com/RingoMar/rinNames">
-                  Open Source Project.
-                </a>
-              </small>
-            </Card.Footer>
-          </Card>
         </CardColumns>
       </Container>
       <Container fluid="xl" className="text-left justify-content-md-center">
@@ -212,37 +188,40 @@ function newbar() {
         </h1>
         <CardDeck>
           <Card
+            className="python"
             bg="dark"
             variant="dark"
             border="dark"
-            style={{ width: "18rem" }}
+            style={{ width: '18rem' }}
           >
-            <Lazyload throttle={200}>
-              <Card.Img variant="top" src={Python} />
-            </Lazyload>
-            <Card.Header className="text-white">Python</Card.Header>
+            <Card.Header className="text-white">Python 3+</Card.Header>
           </Card>
           <Card
+            className="javascript"
             bg="dark"
             variant="dark"
             border="dark"
-            style={{ width: "18rem" }}
+            style={{ width: '18rem' }}
           >
-            <Lazyload throttle={200}>
-              <Card.Img variant="top" src={JavaScript} />
-            </Lazyload>
             <Card.Header className="text-white">JavaScript</Card.Header>
           </Card>
           <Card
+            className="typescript"
             bg="dark"
             variant="dark"
             border="dark"
-            style={{ width: "18rem" }}
+            style={{ width: '18rem' }}
           >
-            <Lazyload throttle={200}>
-              <Card.Img variant="top" src={CSH} />
-            </Lazyload>
-            <Card.Header className="text-white">C Sharp</Card.Header>
+            <Card.Header className="text-white">Typescript</Card.Header>
+          </Card>
+          <Card
+            className="go"
+            bg="dark"
+            variant="dark"
+            border="dark"
+            style={{ width: '18rem' }}
+          >
+            <Card.Header className="text-white">Go Lang</Card.Header>
           </Card>
         </CardDeck>
         <h1 className="pushLil">
@@ -254,61 +233,54 @@ function newbar() {
             bg="dark"
             variant="dark"
             border="dark"
-            style={{ width: "18rem" }}
+            style={{ width: '18rem' }}
           >
-            <Lazyload throttle={200}>
-              <Card.Img variant="top" src={v} />
-            </Lazyload>
             <Card.Header className="text-white">VS Code</Card.Header>
           </Card>
           <Card
             bg="dark"
             variant="dark"
             border="dark"
-            style={{ width: "18rem" }}
+            style={{ width: '18rem' }}
           >
-            <Lazyload throttle={200}>
-              <Card.Img variant="top" src={git} />
-            </Lazyload>
-            <Card.Header className="text-white">Git</Card.Header>
+            <Card.Header className="text-white">Git/Git Hub</Card.Header>
           </Card>
           <Card
             bg="dark"
             variant="dark"
             border="dark"
-            style={{ width: "18rem" }}
+            style={{ width: '18rem' }}
           >
-            <Lazyload throttle={200}>
-              <Card.Img variant="top" src={Re} />
-            </Lazyload>
             <Card.Header className="text-white">React</Card.Header>
           </Card>
           <Card
             bg="dark"
             variant="dark"
             border="dark"
-            style={{ width: "18rem" }}
+            style={{ width: '18rem' }}
           >
-            <Lazyload throttle={200}>
-              <Card.Img variant="top" src={mdb} />
-            </Lazyload>
             <Card.Header className="text-white">Mongo DB</Card.Header>
           </Card>
           <Card
             bg="dark"
             variant="dark"
             border="dark"
-            style={{ width: "18rem" }}
+            style={{ width: '18rem' }}
           >
-            <Lazyload throttle={200}>
-              <Card.Img variant="top" src={mcss} />
-            </Lazyload>
             <Card.Header className="text-white">Materializecss</Card.Header>
+          </Card>
+          <Card
+            bg="dark"
+            variant="dark"
+            border="dark"
+            style={{ width: '18rem' }}
+          >
+            <Card.Header className="text-white">Bootstrap 4</Card.Header>
           </Card>
         </CardDeck>
       </Container>
     </div>
-  );
+  )
 }
 
-export default newbar;
+export default newbar

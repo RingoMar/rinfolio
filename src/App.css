@@ -10,21 +10,22 @@ body {
 .App-logo {
   height: 60vmin;
   pointer-events: none;
-  animation: App-logo-spin alternate-reverse 20s cubic-bezier(0.33, 1.51, 0.99, -0.32);
+  animation: App-logo-spin alternate-reverse 20s
+    cubic-bezier(0.33, 1.51, 0.99, -0.32);
 }
 
 .App-lost-logo {
   margin: 100px;
   height: 60vmin;
   pointer-events: none;
-  animation: shakeTheRoom 2s alternate-reverse cubic-bezier(.36, .07, .19, .97) both;
+  animation: shakeTheRoom 2s alternate-reverse
+    cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
 }
 
 @keyframes shakeTheRoom {
-
   10%,
   90% {
     transform: translate3d(-1px, 0, 0);
@@ -111,7 +112,6 @@ a {
 }
 
 .hr-color-up {
-
   border-top: 1px solid #61dafb !important;
 }
 
@@ -226,4 +226,40 @@ ellipse {
     width: 267px;
     margin-top: 15px;
   }
+}
+
+.python {
+  background: rgb(54, 109, 155);
+  background: linear-gradient(
+    90deg,
+    rgba(54, 109, 155, 1) 54%,
+    rgba(255, 209, 65, 1) 97%
+  );
+}
+
+.javascript {
+  background: rgb(247, 224, 24);
+  background: linear-gradient(
+    90deg,
+    rgba(247, 224, 24, 1) 54%,
+    rgba(66, 63, 63, 0.9668242296918768) 97%
+  );
+}
+
+.typescript {
+  background: rgb(45, 121, 199);
+  background: linear-gradient(
+    90deg,
+    rgba(45, 121, 199, 1) 54%,
+    rgba(66, 63, 63, 0.9668242296918768) 97%
+  );
+}
+
+.go {
+  background: rgb(47, 188, 176);
+  background: linear-gradient(
+    90deg,
+    rgba(47, 188, 176, 1) 54%,
+    rgba(66, 63, 63, 0.9668242296918768) 97%
+  );
 }
